@@ -1,14 +1,6 @@
 import $ from 'jquery'
+import _ from 'lodash'
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = "Hello OH!"
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
 
-  $(document).append('<p>jQuery loaded!</p>')
+if($) $("body").append("<div><p>jQuery loaded</p></div>")
+if(_) $("body").append("<div><p>Lodash loaded</p></div>")
