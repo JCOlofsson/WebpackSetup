@@ -19,7 +19,7 @@ module.exports = {
             }
         },
         {
-            // LOAD SCSS and SASS files and 
+            // Loas SCSS, SASS and CSS files,
             test: /\.s[ac]ss$/,
             use: [
                 {
